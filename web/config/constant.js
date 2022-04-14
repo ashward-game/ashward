@@ -1,0 +1,7 @@
+export const SHORT_DATE_FORMAT = 'DD-MM-YYYY'
+export const DATE_FORMAT = 'DD/MM/YYYY'
+export const DATE_FORMAT_PICKET = 'YYYY, MM, DD'
+export const FULL_DATE_FORMAT = 'DD-MM-YYYY HH:mm:ss'
+export const DATE_TIME_DEPOSIT_FORMAT = 'HH:mm DD/MM/YYYY'
+export const DATE_FULL_TIME_FORMAT = 'HH:mm:ss DD/MM/YYYY'
+export const TIME_FORMAT = 'HH:mm'

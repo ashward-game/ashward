@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.0",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "@truffle/hdwallet-provider": "^2.0.0",
+    "chai": "^4.3.4",
+    "chai-bn": "^0.3.0",
+    "dotenv": "^10.0.0",
+    "erc-payable-token": "file:../packages/erc1363-payable-token",
+    "ganache-time-traveler": "^1.0.16",
+    "solidity-bytes-utils": "^0.8.0",
+    "truffle-assertions": "^0.9.2",
+    "web3": "^1.6.1"
+  }
+}

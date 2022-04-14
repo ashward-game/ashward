@@ -1,0 +1,59 @@
+body {
+    background-image: url("/assets/Pattern.png"), url("/assets/bg-brown.png");
+    background-repeat: repeat;
+    background-color: #381d24;
+}
+.header {
+    background-image: url("/assets/Header_BG.png");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+    width: 100%;
+    padding-bottom: 4rem;
+}
+.wallet {
+    position: fixed;
+    top: 0;
+    right: 1.5rem;
+    z-index: 1031;
+    img {
+        width: 100%;
+    }
+}
+.box-sale {
+    width: min-content;
+    min-width: 600px;
+    position: relative;
+}
+.list-box{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: .5rem 1rem;
+    .box{
+        position: relative;
+        .image{
+            position: relative;
+        }
+        button{
+            position: absolute;
+            background-image: url("/assets/btn_buy_off.png");
+            background-size: 100% 100%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 86%;
+            height: 32px;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 16px;
+            &:hover{
+                background-image: url("/assets/btn_buy_on.png");
+            }
+        }
+    }
+}

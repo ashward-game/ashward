@@ -1,0 +1,21 @@
+# db configuration
+MYSQL_USER=user
+MYSQL_PASSWORD=password
+MYSQL_DATABASE=orbit
+DB_HOST=localhost
+DB_PORT=3306
+
+# blockchain configuration
+RPC_CONFIG_FILE=./config/rpc.json
+CHAIN_ID=ganache
+
+# storage configuration
+IPFS_SHELL_URI=http://localhost:5001
+IPFS_URI=http://localhost:8080/ipfs/
+# fake ipfs
+LOCAL_STORAGE_URI=http://localhost:8081/assets/nft/
+LOCAL_STORAGE_DIR=../assets/nft
+
+# internal services configuration
+SIGNING_SERVICE_ADDRESS=localhost:3002
+OPENBOX_SERVICE_ADDRESS=localhost:3003

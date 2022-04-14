@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Pixel Font7';
+    src: url('PixelFont-7.woff2') format('woff2'),
+        url('PixelFont-7.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

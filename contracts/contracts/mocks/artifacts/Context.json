@@ -1,0 +1,77 @@
+{
+	"deploy": {
+		"VM:-": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"main:1": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"ropsten:3": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"rinkeby:4": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"kovan:42": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"görli:5": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		},
+		"Custom": {
+			"linkReferences": {},
+			"autoDeployLib": true
+		}
+	},
+	"data": {
+		"bytecode": {
+			"functionDebugData": {
+				"@_104": {
+					"entryPoint": null,
+					"id": 104,
+					"parameterSlots": 0,
+					"returnSlots": 0
+				}
+			},
+			"generatedSources": [],
+			"linkReferences": {},
+			"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212204ccbc9d1db63b5b66f5a4791d6255b549b5c684611d2fb8344cb19aea2bb856364736f6c63430008090033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x4C 0xCB 0xC9 0xD1 0xDB PUSH4 0xB5B66F5A SELFBALANCE SWAP2 0xD6 0x25 JUMPDEST SLOAD SWAP12 0x5C PUSH9 0x4611D2FB8344CB19AE LOG2 0xBB DUP6 PUSH4 0x64736F6C PUSH4 0x43000809 STOP CALLER ",
+			"sourceMap": "3875:547:0:-:0;;;4055:16;;;;;;;;;;3875:547;;;;;;"
+		},
+		"deployedBytecode": {
+			"functionDebugData": {},
+			"generatedSources": [],
+			"immutableReferences": {},
+			"linkReferences": {},
+			"object": "6080604052600080fdfea26469706673582212204ccbc9d1db63b5b66f5a4791d6255b549b5c684611d2fb8344cb19aea2bb856364736f6c63430008090033",
+			"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0x4C 0xCB 0xC9 0xD1 0xDB PUSH4 0xB5B66F5A SELFBALANCE SWAP2 0xD6 0x25 JUMPDEST SLOAD SWAP12 0x5C PUSH9 0x4611D2FB8344CB19AE LOG2 0xBB DUP6 PUSH4 0x64736F6C PUSH4 0x43000809 STOP CALLER ",
+			"sourceMap": "3875:547:0:-:0;;;;;"
+		},
+		"gasEstimates": {
+			"creation": {
+				"codeDepositCost": "12600",
+				"executionCost": "66",
+				"totalCost": "12666"
+			},
+			"internal": {
+				"_msgData()": "infinite",
+				"_msgSender()": "infinite"
+			}
+		},
+		"methodIdentifiers": {}
+	},
+	"abi": [
+		{
+			"inputs": [],
+			"stateMutability": "nonpayable",
+			"type": "constructor"
+		}
+	]
+}

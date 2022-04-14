@@ -1,0 +1,5 @@
+
+@import "./functions";
+@mixin stroke($stroke, $color, $blur) {
+    text-shadow: stroke($stroke, $color, $blur);
+}

@@ -1,0 +1,15 @@
+FROM node:latest
+
+WORKDIR /orbit
+RUN npm install -g truffle
+RUN npm install -g ganache-cli
+# TODO: current version of ganache (v6.x) does not support node >= 17
+# causing an error "error:0308010C:digital envelope routines::unsupported"
+# when running `ganache-cli`.
+# ganache v7 should've fixed this problem.
+ENV NODE_OPTIONS=--openssl-legacy-provider
+# Listening on port 8545, which is the default port of ganache
+EXPOSE 8545
+# TODO maybe later we need to specify networkID for ganache
+# use "--networkId", "1337"
+CMD ganache-cli --host=0.0.0.0 -m="${MNEMONIC}" --accounts=10000

@@ -1,0 +1,10 @@
+{
+    "bsc": {
+        "56": [
+            "wss://speedy-nodes-nyc.moralis.io/21b70f3b3973fa71c3a4d25a/bsc/mainnet/ws"
+        ],
+        "97": [
+            "wss://speedy-nodes-nyc.moralis.io/21b70f3b3973fa71c3a4d25a/bsc/testnet/ws"
+        ]
+    }
+}

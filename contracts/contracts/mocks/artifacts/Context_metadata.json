@@ -1,0 +1,51 @@
+{
+	"compiler": {
+		"version": "0.8.9+commit.e5eed63a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"mocks/BusdMock.sol": "Context"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"mocks/BusdMock.sol": {
+			"keccak256": "0xe864718eb4020b1b7975b76556836aa00effe9d5de234994cce7c06f0b23efee",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://412de1e995b7975b5751f790fa43a1b9e19cb491142cf9e8cc513c8f827f1d7d",
+				"dweb:/ipfs/QmNSe8MBL1B4oAaCyo9xeEuSe3WQzbLzRuqjPucetbSyN3"
+			]
+		}
+	},
+	"version": 1
+}

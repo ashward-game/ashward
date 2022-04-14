@@ -1,0 +1,143 @@
+@import "./variables";
+@import "./mixins";
+@import "./components/typo";
+@import "~/node_modules/hamburgers/_sass/hamburgers/hamburgers";
+@import "animate.css";
+
+.font-pixel {
+    font-family: "Pixel", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+body {
+    font-family: "Pixel", sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(0deg, #3b6410 0%, #7cad13 100%);
+    background-repeat: repeat-y;
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+.flip-x {
+    transform: scaleX(-1);
+}
+.text-yellow {
+    color: $yellow;
+}
+.line-height-30 {
+    line-height: 30px;
+}
+.line-height-35 {
+    line-height: 35px;
+}
+.line-height-40 {
+    line-height: 40px;
+}
+.line-height-47 {
+    line-height: 47px;
+}
+.-bottom-21rem {
+    bottom: -21rem;
+}
+.-translate-x-1\/2 {
+    transform: translateX(-50%);
+}
+.-translate-y-1\/2 {
+    transform: translateY(-50%);
+}
+.-translate-1\/2 {
+    transform: translateY(-50%) translateX(-50%);
+}
+.center-center {
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.max-w-8xl {
+    max-width: 90rem;
+}
+.max-w-9xl {
+    max-width: 100rem;
+}
+.w-365px {
+    width: 365px;
+}
+.h-530px {
+    height: 530px;
+}
+.mt-22px {
+    margin-top: 22px;
+}
+.move-left-leave-active {
+    animation: leftOut .2s ease;
+}
+.move-left-enter-active {
+    animation: leftIn .2s ease;
+}
+.move-right-leave-active {
+    animation: rightOut .2s ease;
+}
+.move-right-enter-active {
+    animation: rightIn .2s ease;
+}
+@keyframes leftIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes leftOut {
+    0% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+@keyframes rightIn {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes rightOut {
+    0% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
+@import "./responsive";
+.p-toast {
+  z-index: 1200 !important;
+}

@@ -1,0 +1,11 @@
+FROM node:latest
+
+WORKDIR /orbit
+ENV NODE_PATH /usr/local/lib/node_modules
+RUN npm install -g truffle
+RUN npm install -g solc@0.8.9
+RUN npm install -g chai
+RUN npm install -g truffle-assertions
+RUN npm install -g web3
+RUN npm install -g chai-bn
+ENV NODE_OPTIONS=--openssl-legacy-provider

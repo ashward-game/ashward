@@ -1,0 +1,216 @@
+
+CharFxSR.png
+size: 944,720
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+FXSR_00000
+  rotate: false
+  xy: 140, 593
+  size: 138, 122
+  orig: 143, 124
+  offset: 2, 1
+  index: -1
+FXSR_00002
+  rotate: false
+  xy: 2, 605
+  size: 136, 110
+  orig: 142, 112
+  offset: 3, 1
+  index: -1
+FXSR_00004
+  rotate: false
+  xy: 577, 583
+  size: 138, 132
+  orig: 143, 134
+  offset: 3, 1
+  index: -1
+FXSR_00006
+  rotate: false
+  xy: 717, 582
+  size: 137, 133
+  orig: 141, 136
+  offset: 1, 1
+  index: -1
+FXSR_00008
+  rotate: true
+  xy: 2, 464
+  size: 139, 134
+  orig: 144, 136
+  offset: 2, 1
+  index: -1
+FXSR_00010
+  rotate: true
+  xy: 799, 303
+  size: 138, 142
+  orig: 143, 144
+  offset: 2, 1
+  index: -1
+FXSR_00012
+  rotate: true
+  xy: 606, 443
+  size: 137, 147
+  orig: 143, 149
+  offset: 3, 1
+  index: -1
+FXSR_00014
+  rotate: true
+  xy: 755, 443
+  size: 137, 157
+  orig: 143, 159
+  offset: 3, 1
+  index: -1
+FXSR_00016
+  rotate: true
+  xy: 470, 163
+  size: 139, 161
+  orig: 143, 163
+  offset: 1, 1
+  index: -1
+FXSR_00018
+  rotate: true
+  xy: 785, 158
+  size: 143, 151
+  orig: 146, 170
+  offset: 1, 1
+  index: -1
+FXSR_00020
+  rotate: false
+  xy: 280, 588
+  size: 145, 127
+  orig: 149, 129
+  offset: 1, 1
+  index: -1
+FXSR_00022
+  rotate: false
+  xy: 427, 585
+  size: 148, 130
+  orig: 152, 132
+  offset: 1, 1
+  index: -1
+FXSR_00024
+  rotate: false
+  xy: 138, 451
+  size: 152, 135
+  orig: 158, 138
+  offset: 3, 1
+  index: -1
+FXSR_00026
+  rotate: false
+  xy: 303, 16
+  size: 154, 148
+  orig: 158, 151
+  offset: 1, 1
+  index: -1
+FXSR_00028
+  rotate: false
+  xy: 2, 312
+  size: 154, 137
+  orig: 160, 140
+  offset: 3, 1
+  index: -1
+FXSR_00030
+  rotate: false
+  xy: 617, 4
+  size: 154, 154
+  orig: 158, 159
+  offset: 1, 1
+  index: -1
+FXSR_00032
+  rotate: false
+  xy: 773, 2
+  size: 155, 154
+  orig: 158, 159
+  offset: 1, 1
+  index: -1
+FXSR_00034
+  rotate: false
+  xy: 2, 26
+  size: 150, 143
+  orig: 154, 146
+  offset: 1, 1
+  index: -1
+FXSR_00036
+  rotate: true
+  xy: 459, 13
+  size: 148, 156
+  orig: 152, 159
+  offset: 1, 1
+  index: -1
+FXSR_00038
+  rotate: true
+  xy: 154, 23
+  size: 145, 147
+  orig: 149, 150
+  offset: 1, 1
+  index: -1
+FXSR_00040
+  rotate: true
+  xy: 633, 160
+  size: 142, 150
+  orig: 146, 152
+  offset: 1, 1
+  index: -1
+FXSR_00042
+  rotate: true
+  xy: 2, 171
+  size: 139, 151
+  orig: 143, 154
+  offset: 3, 1
+  index: -1
+FXSR_00044
+  rotate: true
+  xy: 158, 309
+  size: 137, 159
+  orig: 142, 163
+  offset: 4, 1
+  index: -1
+FXSR_00046
+  rotate: true
+  xy: 319, 306
+  size: 137, 164
+  orig: 141, 166
+  offset: 2, 1
+  index: -1
+FXSR_00048
+  rotate: true
+  xy: 451, 445
+  size: 136, 153
+  orig: 141, 156
+  offset: 2, 1
+  index: -1
+FXSR_00050
+  rotate: true
+  xy: 485, 304
+  size: 137, 154
+  orig: 143, 156
+  offset: 3, 1
+  index: -1
+FXSR_00052
+  rotate: true
+  xy: 641, 304
+  size: 137, 156
+  orig: 143, 158
+  offset: 3, 1
+  index: -1
+FXSR_00054
+  rotate: true
+  xy: 155, 170
+  size: 137, 156
+  orig: 143, 158
+  offset: 3, 1
+  index: -1
+FXSR_00056
+  rotate: true
+  xy: 313, 166
+  size: 138, 155
+  orig: 143, 157
+  offset: 2, 1
+  index: -1
+FXSR_00058
+  rotate: true
+  xy: 292, 448
+  size: 135, 157
+  orig: 142, 159
+  offset: 4, 1
+  index: -1

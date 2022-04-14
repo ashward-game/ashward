@@ -1,0 +1,30 @@
+.nav-item .nuxt-link-exact-active, .menu-item .nuxt-link-exact-active {
+  border-color: #DCB52C !important;
+  color: #DCB52C !important;
+  &:before{
+    opacity: 1 !important;
+  }
+}
+
+.icon-copy {
+  cursor: pointer;
+}
+.-v2 .nuxt-link-exact-active {
+  background-color: #381D24 !important;
+  color: #fff !important;
+}
+.nav__mobile .nuxt-link-exact-active {
+  border-color: #DCB52C !important;
+  color: #DCB52C !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

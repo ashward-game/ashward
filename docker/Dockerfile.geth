@@ -1,0 +1,6 @@
+# Pull all binaries from ethereum/client-go to an alpine container
+FROM ethereum/client-go:alltools-stable as geth
+FROM alpine:latest
+RUN apk add --no-cache ca-certificates
+COPY --from=geth /usr/local/bin/* /usr/local/bin/
+WORKDIR /orbit

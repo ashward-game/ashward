@@ -1,0 +1,48 @@
+
+Ghost.png
+size: 456,352
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+mat
+  rotate: false
+  xy: 308, 254
+  size: 143, 95
+  orig: 143, 95
+  offset: 0, 0
+  index: -1
+mat2
+  rotate: false
+  xy: 308, 177
+  size: 135, 75
+  orig: 135, 75
+  offset: 0, 0
+  index: -1
+mieng
+  rotate: true
+  xy: 408, 70
+  size: 105, 46
+  orig: 105, 46
+  offset: 0, 0
+  index: -1
+tayngoai
+  rotate: true
+  xy: 308, 96
+  size: 79, 98
+  orig: 79, 98
+  offset: 0, 0
+  index: -1
+taytrong
+  rotate: true
+  xy: 308, 13
+  size: 81, 82
+  orig: 81, 82
+  offset: 0, 0
+  index: -1
+than
+  rotate: false
+  xy: 2, 2
+  size: 304, 347
+  orig: 304, 347
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,274 @@
+.progress {
+	height: 8px;
+	border-radius: 8px;
+	background-color: #634A50;
+	&__wrap{
+		color: #D0D0D0;
+	}
+	&-bar{
+		background: #799F0C;
+	}
+}
+
+.nav-custom{
+	font-size: 14px;
+	line-height: 18px;
+	&.-box{
+	}
+	.nav-item{
+		&:not(:last-child){
+			margin-right: 24px;
+		}
+	}
+	.nav-link{
+		position: relative;
+		color: #919191;
+		padding: 8px 0 6px;
+		border: 0;
+		background-color: transparent;
+		&:before{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color:#E2D216;
+			opacity: 0;
+			transition: all .5s;;
+		}
+		&.active, &:hover{
+			color: #E2D216;
+			&:before{
+				opacity: 1;
+			}
+		}
+	}
+}
+
+
+.litepaper{
+	&__nav{
+		background-color: #3E2727;
+		box-shadow: 0px 2px 20px rgba(111, 66, 169, 0.1);
+		.nav-link{
+			padding: 16px 0 6px;
+		}
+	}
+
+	&__header{
+		padding: 24px;
+		background-color: #4A2A32;
+		.el__thumb{
+			flex: 0 0 auto;
+			width: 60px;
+			height: 60px;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.el__title{
+			font-size: 24px;
+			line-height: 30px;
+			color: #E7E7E7;
+		}
+		.el__sub{
+			font-size: 18px;
+			line-height: 20px;
+			color: #D0D0D0;
+		}
+		.el__stt{
+			padding: 8px;
+			font-size: 16px;
+			line-height: 18px;
+			color: #BF99FF;
+			background: rgba(191, 153, 255, 0.1);
+			border-radius: 6px;
+		}
+		.el__cz{
+			padding-left: calc(60px);
+			font-size: 18px;
+			line-height: 20px;
+			color: #BDBDBD;
+		}
+	}
+	.el__box{
+		font-size: 14px;
+		line-height: 18px;
+		color: #D0D0D0;
+		padding: 24px;
+		background-color: #4A2A32;
+
+		&__tab{
+			background-color: #3E2727;
+		}
+		&__time{
+			.-time{
+				font-size: 24px;
+				line-height: 30px;
+				letter-spacing: 1px;
+				color: #F9F7F7;
+			}
+		}
+		.-text-light{
+			color: #F9F7F7;
+		}
+		.el__list{
+			&.-light{
+				li{
+					.li__val{
+						font-size: 16px;
+						color: #F9F7F7;
+					}
+				}
+			}
+			&.-s2{
+				li{
+					.li__val{
+						max-width: 175px;
+					}
+				}
+			}
+
+			&.-investor{
+				li{
+					&:last-child{
+						border-bottom: 0;
+					}
+				}
+				.-max220{
+					max-width: 220px;
+				}
+				.li__val{
+					max-width: 205px;
+					&.-ongoing{
+						color: #35A700;
+					}
+					&.-pending{
+						color: #9C5C5C;
+					}
+				}
+			}
+			li{
+				display: flex;
+				padding: 12px 0;
+				border-bottom: 1px solid #5E434A;
+				.li__val{
+					word-break: break-all;
+					text-align: right;
+				}
+			}
+		}
+		.-text-note{
+			font-size: 16px;
+			color: #C4C4C4;
+		}
+
+		.el__schedule{
+			font-size: 16px;
+			line-height: 20px;
+			&.-col3{
+				.-tr{
+
+				}
+			}
+			.-th{
+				display: flex;
+				padding: 12px 0;
+			}
+			.-tr{
+				display: flex;
+				padding: 12px 0;
+				+.-tr{
+					border-top: 1px solid #5E434A;
+				}
+			}
+			.-label{
+				color: #9C5C5C;
+			}
+
+		}
+
+		.table{
+			font-size: 16px;
+			line-height: 20px;
+			color: #D0D0D0;
+			&.-table-6col{
+				td, th{
+					&:nth-child(4), &:nth-child(5), &:nth-child(6){
+						text-align: center;
+					}
+				}
+				.tr-toggle{
+					display: none;
+					&.active{
+						display: block;
+					}
+				}
+				@media (max-width:767px){
+					thead{
+						display: none;
+					}
+					td, th{
+						&:nth-child(2), &:nth-child(5), &:nth-child(6){
+							display: none;
+						}
+					}
+				}
+			}
+			thead{
+				color: #9C5C5C;
+				th{
+					font-weight: 400;
+				}
+
+			}
+			> :not(caption) > * > *{
+				vertical-align: middle;
+				padding: 12px 0.5rem;
+				border-bottom: 1px solid #5E434A;
+			}
+
+			.td__stt{
+				color: #9C5C5C;
+				&.-claimed{
+					color: #35A700;
+				}
+			}
+
+			&-note{
+				font-size: 16px;
+				color: #716161;
+			}
+		}
+	}
+	@media (max-width: 575px){
+		&__header{
+			border-radius: 4px;
+			.el__cz {
+			    padding-left: 0;
+			}
+		}
+		.el__box__tab{
+			border-radius: 4px 4px 0 0;
+		}
+		.el__box{
+			border-radius: 4px;
+			&.-tab{
+				border-radius: 0 0 4px 4px;
+			}
+			.el__list.-light li .li__val {
+			    font-size: 14px;
+			}
+			.el__list.-investor{
+				.-max220{
+					max-width: 220px;
+				}
+				.li__val{
+					max-width: 180px;
+				}
+			}
+		}
+	}
+}

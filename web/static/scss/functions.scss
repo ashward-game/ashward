@@ -1,0 +1,11 @@
+@function stroke($stroke, $color, $blur) {
+    $shadow: ();
+    $from: $stroke * -1;
+    @for $i from $from through $stroke {
+        @for $j from $from through $stroke {
+            $shadow: append($shadow, $i * 1px $j * 1px $blur $color, comma);
+        }
+    }
+    @return $shadow;
+}
+

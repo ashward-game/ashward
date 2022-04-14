@@ -1,0 +1,5 @@
+# common environment variables
+
+# used for specified runtime environment and load specified-environment variables via `.env.${ORBIT_ENV}` file
+# support env: development, production
+ORBIT_ENV=development

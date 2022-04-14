@@ -1,0 +1,80 @@
+version: "3.9"
+services:
+  truffle:
+    profiles: [ "dev" ]
+    build:
+      context: .
+      dockerfile: Dockerfile.truffle
+    volumes:
+      - ../.:/orbit
+    networks:
+      - orbit
+    command: sh -c "cd contracts && npm install && cd .."
+  ganache:
+    profiles: [ "dev" ]
+    build:
+      context: .
+      dockerfile: Dockerfile.ganache
+    environment:
+      MNEMONIC: ${SAMPLE_MNEMONIC}
+    ports:
+      - "8545:8545"
+    volumes:
+      - ../.:/orbit
+    networks:
+      - orbit
+  geth:
+    profiles: [ "dev" ]
+    build:
+      context: .
+      dockerfile: Dockerfile.geth
+    volumes:
+      - ../.:/orbit
+    networks:
+      - orbit
+  db:
+    profiles: [ "db" ]
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+    networks:
+      - orbit
+    ports:
+      - "${DB_PORT}:3306"
+  # web:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.web
+  #   ports:
+  #     - "3000:3000"
+  #   volumes:
+  #     - ../web:/web
+  #     - ../config:/config
+  #   networks:
+  #     - orbit
+  #   environment:
+  #     NODE_ENV: development
+  #     HOST: 0.0.0.0
+  #     PORT: 3000
+  ipfs:
+    profiles: [ "ipfs" ]
+    image: ipfs/go-ipfs:latest
+    networks:
+      - orbit
+    ports:
+      - "4001:4001"
+      - "5001:5001"
+      - "8080:8080"
+    volumes:
+      - ${IPFS_STAGING}:/export
+      - ${IPFS_DATA}:/data/ipfs
+    environment:
+      - IPFS_PROFILE=server
+networks:
+  orbit:
+    name: orbit

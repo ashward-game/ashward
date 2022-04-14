@@ -1,0 +1,20 @@
+{
+    "EpicBox": {
+        "level": 0,
+        "content": {
+            "epic": 100
+        }
+    },
+    "LegendaryBox": {
+        "level": 1,
+        "content": {
+            "legendary": 100
+        }
+    },
+    "MythBox": {
+        "level": 2,
+        "content": {
+            "mythical": 100
+        }
+    }
+}
